@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Readex Pro", sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply hover:bg-primary px-2 py-1 rounded-md hover:text-gray;
+  }
+}
+
+@keyframes openAnimation {
+  0% {
+    top: 45px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+
+.animation-open {
+  animation-name: openAnimation;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
